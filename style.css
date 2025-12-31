@@ -1,0 +1,62 @@
+body {
+  background: linear-gradient(135deg, #8b0000 0%, #dc143c 50%, #8b0000 100%);
+}
+
+@keyframes winnerGlow {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+
+.winner {
+  animation: winnerGlow 0.8s ease;
+}
+
+@keyframes trophyFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.trophy-float {
+  animation: trophyFloat 3s ease-in-out infinite;
+}
+
+@keyframes confettiFall {
+  to {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+.confetti {
+  animation: confettiFall 3s linear forwards;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.bracket-svg {
+  pointer-events: none;
+}
+
+.bracket-line {
+  stroke: rgba(255, 255, 255, 0.3);
+  stroke-width: 2;
+  fill: none;
+}

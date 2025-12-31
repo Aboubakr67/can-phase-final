@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: can-phase-final-service
+spec:
+  selector:
+    app: can-phase-final
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: ClusterIP

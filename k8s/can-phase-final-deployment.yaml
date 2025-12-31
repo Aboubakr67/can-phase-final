@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: can-phase-final
+  labels:
+    app: can-phase-final
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: can-phase-final
+  template:
+    metadata:
+      labels:
+        app: can-phase-final
+    spec:
+      containers:
+        - name: can-phase-final
+          image: can-phase-final:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              memory: "32Mi"
+              cpu: "50m"
+            limits:
+              memory: "128Mi"
+              cpu: "200m"
