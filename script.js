@@ -1,28 +1,28 @@
 // Codes ISO des pays pour les drapeaux
 const teamFlags = {
-  Sénégal: "sn",
-  "Guinée Equatoriale": "gq",
-
-  Tunisie: "tn",
   Mali: "ml",
+  Tunisie: "tn",
+
+  Sénégal: "sn",
+  Soudan: "sd",
 
   Égypte: "eg",
   Benin: "bj",
 
-  // A définir ...
-  // A definir ...
+  "Cote d'Ivoire": "ci",
+  "Burkina Faso": "bf",
 
   "Afrique du Sud": "za",
-  // A définir ...
+  Cameroun: "cm",
 
   Maroc: "ma",
   Tanzanie: "tz",
 
-  Nigeria: "ng",
-  // A définir ...
-
   Algérie: "dz",
   "RD Congo": "cd",
+
+  Nigeria: "ng",
+  Mozambique: "mz",
 };
 
 // Fonction pour obtenir l'URL du drapeau
@@ -33,34 +33,30 @@ function getFlagUrl(teamName) {
 
 // Configuration initiale des équipes
 const initialTeams = [
-  { id: 1, name: "Sénégal" },
-  // On ne sais pas encore
-  { id: 2, name: "" },
+  { id: 1, name: "Mali" },
+  { id: 2, name: "Tunisie" },
 
-  { id: 4, name: "Tunisie" },
-  { id: 3, name: "Mali" },
+  { id: 3, name: "Sénégal" },
+  { id: 4, name: "Soudan" },
 
   { id: 5, name: "Égypte" },
   { id: 6, name: "Benin" },
 
-  // On ne sais pas encore
-  { id: 7, name: "" },
-  // On ne sais pas encore
-  { id: 8, name: "" },
+  { id: 7, name: "Cote d'Ivoire" },
+  { id: 8, name: "Burkina Faso" },
 
   { id: 9, name: "Afrique du Sud" },
-  // On ne sais pas encore
-  { id: 10, name: "" },
+  { id: 10, name: "Cameroun" },
 
   { id: 11, name: "Maroc" },
   { id: 12, name: "Tanzanie" },
 
-  { id: 13, name: "Nigeria" },
-  // On ne sais pas encore
-  { id: 14, name: "" },
+  { id: 13, name: "Algérie" },
+  { id: 14, name: "RD Congo" },
 
-  { id: 15, name: "Algérie" },
-  { id: 16, name: "RD Congo" },
+  { id: 15, name: "Nigeria" },
+  // On ne sais pas encore
+  { id: 16, name: "Mozambique" },
 ];
 
 // Structure du tournoi
